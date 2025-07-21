@@ -1,10 +1,10 @@
 """
-Setup configuration for testing_seton_utils_install
+Setup configuration for temp_test_automation
 """
 from setuptools import setup, find_packages
 
 setup(
-    name="testing_seton_utils_install",
+    name="temp_test_automation",
     version="0.1.0",
     description="A Seton ecosystem package",
     author="Your Name",
@@ -20,7 +20,7 @@ setup(
         "google-auth-httplib2>=0.1.0",
         "google-api-python-client>=2.0.0",
         "gspread>=5.0.0",
-        "oracledb>=1.4.0",  # Modern Oracle driver (replaces cx_Oracle)
+        "cx_Oracle>=8.3.0",
     ],
     extras_require={
         "dev": [
@@ -33,7 +33,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "testing_seton_utils_install=testing_seton_utils_install.main:main",
+            "temp_test_automation=temp_test_automation.main:main",
         ],
     },
 )
