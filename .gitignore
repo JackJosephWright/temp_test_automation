@@ -1,0 +1,299 @@
+# Seton Package Template - Comprehensive .gitignore
+
+# ==============================================================================
+# Environment & Secrets - CRITICAL FOR SECURITY
+# ==============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+secrets/
+credentials/
+service-account*.json
+client_secret*.json
+
+# ==============================================================================
+# Python
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+venv_*/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ==============================================================================
+# IDEs and Editors
+# ==============================================================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Seton-Specific
+# ==============================================================================
+# Local development data
+data/local/
+temp_data/
+scratch/
+local_exports/
+
+# Backup files from scripts
+*.backup
+*.bak
+*_backup.*
+
+# Local configuration overrides
+local_config.py
+dev_config.py
+
+# Database connection test files
+test_connection.py
+db_test.py
+
+# Temporary Google Sheets exports
+sheets_export_*.csv
+sheets_export_*.xlsx
+temp_sheet_*.csv
+
+# ==============================================================================
+# Airflow
+# ==============================================================================
+# Airflow logs (when testing locally)
+logs/
+airflow.cfg
+airflow.db
+standalone_admin_password.txt
+
+# ==============================================================================
+# Documentation
+# ==============================================================================
+# Temporary documentation files
+docs/_build/
+docs/build/
+
+# ==============================================================================
+# Development Tools
+# ==============================================================================
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Profiling data
+*.prof
+
+# Benchmarking results
+benchmark_results/
+
+# Local scripts for testing
+test_local.py
+debug_*.py
+scratch_*.py
+
+# ==============================================================================
+# Package Management
+# ==============================================================================
+# Poetry
+poetry.lock
+
+# Conda
+.conda/
+
+# ==============================================================================
+# Misc
+# ==============================================================================
+*.tmp
+*.temp
+.cache/
+.local/
